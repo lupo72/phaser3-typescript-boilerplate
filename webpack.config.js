@@ -5,14 +5,14 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve('dist'),
-    publicPath: 'dist'    
+    publicPath: 'dist'
   },
   module: {
     rules: [
         {
             test: /\.tsx?$/,
             loader: 'ts-loader',
-            exclude: /node_modules/,
+            exclude: ['/node_modules/','/src/assets/tilesets/'],
         },
     ]
   },

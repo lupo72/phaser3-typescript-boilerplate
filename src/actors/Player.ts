@@ -40,6 +40,7 @@ export class Player extends BaseActor {
     update()
     {
       this.moveBasic();
+      this.resetOnLadder();
     }
 
     move() {
@@ -71,7 +72,7 @@ export class Player extends BaseActor {
     }
 
     moveBasic() {
-        // this.canClimb = true;
+        // console.log(this.canClimb);
         if ( this.body.onFloor() && ! this.canClimb ) this.jumping = false;
         let velX = this.cursors.left.isDown ? - this.speedX : this.cursors.right.isDown ? this.speedX : 0;
         let velY = 0;

@@ -5,6 +5,7 @@
   },
   "exclude": [
     "node_modules",
-    "src/assets/tilesets"
+    "src/assets/tilesets",
+    "depreceated/"
   ]
 }

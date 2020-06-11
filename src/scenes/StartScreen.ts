@@ -6,6 +6,8 @@ export class StartScreen extends Phaser.Scene {
     preload()
     {
         this.load.spritesheet('Player', './src/assets/block-ninja-32px.png', {frameWidth: 32, frameHeight: 32});
+        this.load.spritesheet('MyBasicTileset', './src/assets/tilesets/MyBasicTileset.png', {frameWidth:32, frameHeight:32});
+        this.load.tilemapTiledJSON('MyTilemap', './src/assets/tilemaps/demo-level-02.json');
     }
 
     init() {

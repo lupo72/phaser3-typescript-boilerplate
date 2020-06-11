@@ -71,10 +71,10 @@ class Player extends BaseActor {
         if ( this.body.onFloor() ) this.jumping = false;
         if (this.canClimb) velY = this.cursors.up.isDown ? - this.speedY : this.cursors.down.isDown ? this.speedY : 0;
         /*
-        if (this.cursors.up.isDown && this.body.onFloor() && ! this.jumping)
+        if (this.cursors.up.isDown && this.body.onFloor() && ! this.canJump)
         {
             console.log('jump');
-            this.jumping = true;
+            this.canJump = true;
             velY = -400;
         }
         */
